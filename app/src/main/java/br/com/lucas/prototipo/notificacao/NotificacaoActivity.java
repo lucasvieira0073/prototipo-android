@@ -51,6 +51,11 @@ public class NotificacaoActivity extends AppCompatActivity implements View.OnCli
             builder.setSmallIcon(R.mipmap.ic_launcher);
             builder.setContentIntent(pendingIntent);
 
+            //configurações a mais
+            builder.setVibrate(new long[] { 1000, 1000, 1000, 1000, 1000 });
+            builder.setPriority(Notification.PRIORITY_MAX);
+
+
             notificationManager.notify(1, builder.build());
 
 
