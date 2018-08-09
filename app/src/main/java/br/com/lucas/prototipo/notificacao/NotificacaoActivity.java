@@ -48,7 +48,8 @@ public class NotificacaoActivity extends AppCompatActivity implements View.OnCli
             NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
             builder.setContentTitle("Título");
             builder.setContentText("Descrição");
-            builder.setSmallIcon(R.mipmap.ic_launcher);
+            //builder.setSmallIcon(R.mipmap.ic_launcher);
+            builder.setSmallIcon(R.drawable.ic_camera);
             builder.setContentIntent(pendingIntent);
 
             //configurações a mais

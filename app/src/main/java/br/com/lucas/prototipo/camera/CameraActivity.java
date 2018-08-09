@@ -12,7 +12,6 @@ import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationManagerCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -137,7 +136,8 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this, channelId)
-                .setSmallIcon(R.mipmap.ic_launcher)
+                //.setSmallIcon(R.mipmap.ic_launcher)
+                .setSmallIcon(R.drawable.ic_camera)
                 .setContentTitle("Notificação gerada!")
                 .setContentText("Notificação gerada com sucesso!")
 
